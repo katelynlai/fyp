@@ -1,0 +1,320 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  text-align: center; /* Center all page text */
+}
+
+header {
+  background-color: #621362;
+  color: white;
+  padding: 15px;
+  text-align: center; /* Center the header text */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column; /* Stack header text and nav vertically */
+  align-items: center;
+}
+
+.header-text {
+  font-size: 24px;
+  margin: 0;
+}
+
+/* Navigation Bar - Top Bar */
+nav {
+  background-color: #621362;
+  padding: 10px;
+  display: flex;
+  justify-content: center; /* Center the navigation links */
+  align-items: center;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  width: 100%; /* Ensure nav takes full width */
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 16px;
+  display: inline-block;
+}
+
+nav a:hover {
+  background-color: #9932CC;
+  border-radius: 5px;
+}
+
+/* Quick Actions and Staff List */
+.container {
+  display: flex;
+  justify-content: center; /* Center the container */
+  margin: 20px;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.quick-actions, .staff-list, .allocation {
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 48%;
+  margin: 10px; /* Add margin for spacing */
+  text-align: center; /* Center text inside these elements */
+}
+
+/* Buttons */
+.quick-actions button, .edit-btn, .assign-btn, .add-new-btn {
+  background-color: #621362;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.quick-actions button:hover, .edit-btn:hover, .assign-btn:hover, .add-new-btn:hover {
+  background-color: #9932CC;
+}
+
+/* Staff List Table */
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #621362;
+  color: white;
+}
+
+/* Add New Staff Button */
+.add-new-btn {
+  margin-top: 20px;
+  text-align: center;
+  padding: 10px;
+  background-color: #621362;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-new-btn:hover {
+  background-color: #9932CC;
+}
+
+/* Bulk Import Styles */
+.bulk-import {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 60%;
+  margin: 20px auto;
+  text-align: center; /* Center text inside this element */
+}
+
+.bulk-import h2 {
+  color: #621362;
+  margin-bottom: 20px;
+}
+
+.bulk-import input[type="file"] {
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.bulk-import button {
+  background-color: #621362;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.bulk-import button:hover {
+  background-color: #9932CC;
+}
+
+/* Edit Data Styles */
+.edit-data {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 60%;
+  margin: 20px auto;
+  text-align: center; /* Center text inside this element */
+}
+
+.edit-data h2 {
+  color: #621362;
+  margin-bottom: 20px;
+}
+
+.edit-data label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.edit-data input[type="text"], .edit-data input[type="email"], .edit-data select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.edit-data button {
+  background-color: #621362;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.edit-data button:hover {
+  background-color: #9932CC;
+}
+
+/* View Data Styles */
+.view-data {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  margin: 20px auto;
+  text-align: center; /* Center text inside this element */
+}
+
+.view-data h1 {
+  color: #621362;
+  margin-bottom: 20px;
+}
+
+.view-data table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.view-data th, .view-data td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.view-data th {
+  background-color: #621362;
+  color: white;
+}
+
+.view-data .btn-primary {
+  background-color: #621362;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.view-data .btn-primary:hover {
+  background-color: #9932CC;
+}
+
+/* Allocation Styles */
+.allocation {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 60%;
+  margin: 20px auto;
+  text-align: center; /* Center text inside this element */
+}
+
+.allocation h2 {
+  color: #621362;
+  margin-bottom: 20px;
+}
+
+.allocation .staff-selection, .allocation .quota-input {
+  margin-bottom: 20px;
+}
+
+.allocation label {
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.allocation select, .allocation input {
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.allocation .assign-btn {
+  background-color: #621362;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.allocation .assign-btn:hover {
+  background-color: #9932CC;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .quick-actions, .staff-list, .allocation {
+      width: 80%;
+  }
+
+  nav {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  nav a {
+      margin: 5px 0;
+  }
+}
