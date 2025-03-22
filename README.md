@@ -9,6 +9,14 @@ This project is a web application designed for managing students, staff, supervi
 - **Data Management**: View, edit, and manage student and staff information.
 - **Allocation Management**: Allocate supervisors and moderators based on specified criteria.
 
+## Export Data
+
+The application provides the following export functionalities:
+
+1. **Export Student-Moderator Spreadsheet**: Exports a CSV file containing student IDs and moderator names.
+2. **Export Detailed Allocation Spreadsheet**: Exports a CSV file containing student IDs, student names, supervisor names, supervisor emails, moderator names, and moderator emails.
+3. **Export Student-Supervisor Spreadsheet**: Exports a CSV file containing student IDs, student names, supervisor names, and supervisor emails.
+
 ## Project Structure
 
 ```
