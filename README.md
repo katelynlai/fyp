@@ -22,28 +22,28 @@ The application provides the following export functionalities:
 ```
 final-year-project-management
 ├── public
-│   ├── index.html         # Main HTML document
-│   └── favicon.ico        # Favicon for the application
+│   ├── index.html                    # Main HTML document
+│   └── favicon.ico                   # Favicon for the application
 ├── src
 │   ├── components
-│   │   ├── AdminDashboard.js  # Admin dashboard component
-│   │   ├── BulkImport.js      # Bulk import component
-│   │   ├── EditData.js        # Edit data component
-│   │   ├── ViewData.js        # View data component
-│   │   └── Allocation.js       # Allocation component
+│   │   ├── AdminDashboard.js         # Admin dashboard component
+│   │   ├── BulkImport.js             # Bulk import component
+│   │   ├── EditData.js               # Edit data component
+│   │   ├── ViewData.js               # View data component
+│   │   └── Allocation.js             # Allocation component
 │   ├── pages
-│   │   ├── HomePage.js        # Landing page component
-│   │   ├── StudentsPage.js     # Students management page
-│   │   ├── StaffPage.js        # Staff management page
-│   │   ├── SupervisorsPage.js  # Supervisors management page
-│   │   └── ModeratorsPage.js   # Moderators management page
-│   ├── App.js                 # Main application component
-│   ├── App.css                # CSS styles for the application
-│   ├── index.js               # Entry point for the React application
-│   └── logo.svg               # Logo image for the application
-├── package.json               # npm configuration file
-├── .gitignore                 # Files to ignore in version control
-└── README.md                  # Project documentation
+│   │   ├── HomePage.js               # Landing page component
+│   │   ├── StudentsPage.js           # Students management page
+│   │   ├── StaffPage.js              # Staff management page
+│   │   ├── SupervisorsPage.js        # Supervisors management page
+│   │   └── ModeratorsPage.js         # Moderators management page
+│   ├── App.js                        # Main application component
+│   ├── App.css                       # CSS styles for the application
+│   ├── index.js                      # Entry point for the React application
+│   └── logo.svg                      # Logo image for the application
+├── package.json                      # npm configuration file
+├── .gitignore                        # Files to ignore in version control
+└── README.md                         # Project documentation
 ```
 
 ## Getting Started
