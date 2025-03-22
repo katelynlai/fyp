@@ -39,13 +39,13 @@ final-year-project-management
 ├── App.js                          # Main application component
 ├── App.css                         # CSS styles for the application
 ├── index.js                        # Entry point for the React application
-├── api.js                    
-├── firebase.js 
-├── index.css
-├── firebaserc
+├── api.js                          # API calls or functions to interact with back-end
+├── firebase.js                     # Firebase configuration and services
+├── index.css                       # Global CSS styles
+├── firebaserc                      # Firebase project configuration
 ├── .gitignore                      # Files to ignore in version control
-├── firebase.json
-├── package-lock.json
+├── firebase.json                   # Firebase hosting and function settings
+├── package-lock.json               # Ensures consistent dependency versions
 └── README.md                       # Project documentation
 ```
 
