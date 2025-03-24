@@ -1,0 +1,2 @@
+root: C:\Final Year Project\nvm
+path: C:\nvm4w\nodejs
