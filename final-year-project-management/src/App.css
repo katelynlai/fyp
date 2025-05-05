@@ -1,0 +1,846 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  text-align: center; /* Center all page text */
+}
+
+header {
+  background-color: #621362;
+  color: white;
+  padding: 15px;
+  text-align: center; /* Center the header text */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column; /* Stack header text and nav vertically */
+  align-items: center;
+}
+
+.header-text {
+  font-size: 24px;
+  margin: 0;
+}
+
+/* Navigation Bar - Top Bar */
+nav {
+  background-color: #621362;
+  padding: 10px;
+  display: flex;
+  justify-content: center; /* Center the navigation links */
+  align-items: center;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  width: 100%; /* Ensure nav takes full width */
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center; /* Align items vertically */
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav li.logout {
+  margin-left: auto; /* Push the "Logout" button to the far right */
+}
+
+nav a,
+nav button.logout-button {
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 16px;
+  display: inline-block;
+  background-color: #621362;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-align: center;
+}
+
+nav a:hover,
+nav button.logout-button:hover {
+  background-color: #9932CC;
+}
+
+/* Quick Actions and Staff List */
+.container {
+  display: flex;
+  justify-content: center; /* Center the container */
+  margin: 20px;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.quick-actions, .staff-list, .allocation {
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 48%;
+  margin: 10px; /* Add margin for spacing */
+  text-align: center; /* Center text inside these elements */
+}
+
+/* Buttons */
+.quick-actions button, .edit-btn, .assign-btn, .add-new-btn {
+  background-color: #621362;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.quick-actions button:hover, .edit-btn:hover, .assign-btn:hover, .add-new-btn:hover {
+  background-color: #9932CC;
+}
+
+/* Staff List Table */
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #621362;
+  color: white;
+}
+
+/* Add New Staff Button */
+.add-new-btn {
+  margin-top: 20px;
+  text-align: center;
+  padding: 10px;
+  background-color: #621362;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-new-btn:hover {
+  background-color: #9932CC;
+}
+
+/* Bulk Import Styles */
+.bulk-import {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 60%;
+  margin: 20px auto;
+  text-align: center; /* Center text inside this element */
+}
+
+.bulk-import h2 {
+  color: #621362;
+  margin-bottom: 20px;
+}
+
+.bulk-import input[type="file"] {
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.bulk-import button {
+  background-color: #621362;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.bulk-import button:hover {
+  background-color: #9932CC;
+}
+
+
+
+/* Edit Data Styles */
+.edit-data {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 60%;
+  margin: 20px auto;
+  text-align: center; /* Center text inside this element */
+}
+
+.edit-data h2 {
+  color: #621362;
+  margin-bottom: 20px;
+}
+
+.edit-data label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.edit-data input[type="text"], .edit-data input[type="email"], .edit-data select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.edit-data button {
+  background-color: #621362;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.edit-data button:hover {
+  background-color: #9932CC;
+}
+
+/* View Data Styles */
+.view-data {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  margin: 20px auto;
+  text-align: center; /* Center text inside this element */
+}
+
+.view-data h1 {
+  color: #621362;
+  margin-bottom: 20px;
+}
+
+.view-data table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.view-data th, .view-data td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.view-data th {
+  background-color: #621362;
+  color: white;
+}
+
+.view-data .btn-primary {
+  background-color: #621362;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.view-data .btn-primary:hover {
+  background-color: #9932CC;
+}
+
+/* Allocation Styles */
+.allocation {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 60%;
+  margin: 20px auto;
+  text-align: center; /* Center text inside this element */
+}
+
+.allocation h2 {
+  color: #621362;
+  margin-bottom: 20px;
+}
+
+.allocation .staff-selection, .allocation .quota-input {
+  margin-bottom: 20px;
+}
+
+.allocation label {
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.allocation select, .allocation input {
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.allocation .assign-btn {
+  background-color: #621362;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.allocation .assign-btn:hover {
+  background-color: #9932CC;
+}
+
+.allocation {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+h1, h2, h3 {
+  color: #621362;
+  margin: 15px 0;
+}
+
+.method-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 20px;
+  justify-content: center;
+  width: 100%;
+}
+
+.method {
+  flex: 1;
+  min-width: 300px;
+  max-width: 100%;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin: 5px;
+}
+
+.upload-interests {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-sizing: border-box;
+  width: 100%;
+  overflow: hidden;
+}
+
+.export-section {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-sizing: border-box;
+  width: 100%;
+  overflow: hidden;
+}
+
+.export-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.export-buttons button {
+  flex: 1;
+  min-width: 200px;
+}
+
+.table-container {
+  overflow-x: auto;
+  margin-top: 20px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.students-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.students-table th, .students-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.students-table th {
+  background-color: #621362;
+  color: white;
+  padding: 12px 10px;
+}
+
+.students-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.students-table select {
+  margin-right: 5px;
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+button, input[type="file"] {
+  padding: 10px 15px;
+  background-color: #621362;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+input[type="file"], 
+.choose-file-container,
+.file-upload-container {
+  display: block;
+  width: calc(100% - 40px);
+  margin: 10px 20px;
+}
+
+.method > div,
+.upload-interests > div,
+.file-selection-area,
+.purple-background-area {
+  padding: 15px;
+  border-radius: 4px;
+  margin: 10px 20px;
+  width: calc(100% - 40px);
+}
+
+button:hover {
+  background-color: #500d50;
+}
+
+button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+  .method {
+    min-width: 100%;
+  }
+}
+
+.staff {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.add-staff,
+.edit-staff,
+.bulk-import,
+.search-section,
+.delete-all-staff {
+  margin-bottom: 20px;
+}
+
+.add-staff input,
+.edit-staff input,
+.bulk-import input,
+.search-input {
+  margin: 5px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.add-staff button,
+.edit-staff button,
+.bulk-import button,
+.delete-all-staff button {
+  padding: 10px 20px;
+  background-color: #621362;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-staff button:hover,
+.edit-staff button:hover,
+.bulk-import button:hover,
+.delete-all-staff button:hover {
+  background-color: #500d50;
+}
+
+.add-staff-button {
+  padding: 10px 20px;
+  background-color: #621362;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-bottom: 20px;
+}
+
+.add-staff-button:hover {
+  background-color: #500d50;
+}
+
+.staff-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.staff-table th,
+.staff-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.staff-table th {
+  background-color: #621362;
+  color: white;
+}
+
+.staff-table button {
+  margin-right: 5px;
+  padding: 5px 10px;
+  background-color: #621362;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.staff-table button:hover {
+  background-color: #500d50;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 90%;
+}
+
+.modal h2 {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.modal p {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.confirm-button {
+  padding: 10px 20px;
+  background-color: #d9534f;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.confirm-button:hover {
+  background-color: #c9302c;
+}
+
+.cancel-button {
+  padding: 10px 20px;
+  background-color: #ccc;
+  color: black;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cancel-button:hover {
+  background-color: #999;
+}
+
+.notification {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.notification.success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.notification.error {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+.submit-button {
+  padding: 10px 20px;
+  background-color: #621362;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
+
+.submit-button:hover {
+  background-color: #500d50;
+}
+
+.students {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.import-section,
+.delete-all-section,
+.search-section,
+.add-student-form,
+.edit-student-form {
+  margin-bottom: 20px;
+}
+
+.file-input,
+.search-input,
+.form-input {
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.add-button,
+.update-button,
+.cancel-button,
+.edit-button,
+.delete-button,
+.delete-all-button {
+  padding: 10px 20px;
+  background-color: #621362;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-button:hover,
+.update-button:hover,
+.edit-button:hover,
+.delete-button:hover,
+.delete-all-button:hover {
+  background-color: #500d50;
+}
+
+.submit-button {
+  padding: 10px 20px;
+  background-color: #621362;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
+
+.submit-button:hover {
+  background-color: #500d50;
+}
+
+.cancel-button {
+  background-color: #ccc;
+  color: black;
+}
+
+.cancel-button:hover {
+  background-color: #999;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 90%;
+}
+
+.modal h2 {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.modal p {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.confirm-button {
+  padding: 10px 20px;
+  background-color: #d9534f;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.confirm-button:hover {
+  background-color: #c9302c;
+}
+
+.students-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.students-table th,
+.students-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.students-table th {
+  background-color: #500d50;
+}
+
+.add-student-section {
+  margin-bottom: 20px;
+}
+
+.search-section {
+  margin-top: 20px;
+}
+
+.notification {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.notification.success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.notification.info {
+  background-color: #e7f3fe;
+  border: 1px solid #b6d7f9;
+  color: #0c5460;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 4px;
+}
+
+.notification.error {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .quick-actions, .staff-list, .allocation {
+      width: 80%;
+  }
+
+  nav {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  nav a {
+      margin: 5px 0;
+  }
+}
